@@ -1,3 +1,8 @@
+"""
+Method to extract images from ImageNet in Google Collab and create two different datasets for training and Validation
+"""
+
+
 from bs4 import BeautifulSoup
 import numpy as np
 import requests
@@ -37,10 +42,10 @@ def url_to_image(url):
 	return image
 
 
-!mkdir /content/train #create the Train folder
-!mkdir /content/train/cars #create the ships folder
+!mkdir /content/train 
+!mkdir /content/train/cars 
 !mkdir /content/validation
-!mkdir /content/validation/cars #create the ships folder
+!mkdir /content/validation/cars 
 
 # """Training DATA"""
 
